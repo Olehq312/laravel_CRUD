@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\User;
+use App\Models\Boots;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -18,9 +19,10 @@ class DatabaseSeeder extends Seeder
        
 
 
+        Boots::factory(10)->create();
         
 
 
-        $this->call([BootSeeder::class]);
+        // $this->call([BootsSeeder::class]);
     }
 }

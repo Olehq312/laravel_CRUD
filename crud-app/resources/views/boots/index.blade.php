@@ -1,4 +1,4 @@
-@extends('boots.layout')
+@extends('layouts.app')
 
 @section('content')
     <div class="row">

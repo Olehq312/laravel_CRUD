@@ -88,4 +88,12 @@ class BootsController extends Controller
         return redirect()->route('boots.index')
             ->with('success', 'Boots post deleted successfully.');
     }
+
+    public function __construct()
+       {
+          $this->middleware('auth')->except(['index', 'show']);
+       }
 }
+
+
+
